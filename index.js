@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
   res.send("App start");
 });
 
-app.listen(1234, () => {
+app.listen(process.env.PORT || 1234, () => {
   console.log("Express is running");
 });
